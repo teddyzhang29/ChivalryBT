@@ -45,3 +45,11 @@ public class YOUR_ACTION : Action
 }
 ```
 
+# Debug
+
+ChivalryBT will set state of every executed node as prefix of their names.  
+    ![Figure3](https://github.com/teddyzhang29/ChivalryBT/blob/master/Images/debug1.png)
+
+* S=success
+* F=Failed
+* R=running

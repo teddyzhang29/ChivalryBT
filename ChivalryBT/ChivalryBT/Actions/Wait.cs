@@ -3,26 +3,20 @@ using UnityEngine;
 
 namespace ChivalryBT.Actions
 {
-    public class Wait : Action
+    public class YOUR_ACTION : Action
     {
-        public FloatSharedVariable m_delay;
-
-        private float m_timer;
-
         protected override void OnResetData()
         {
             base.OnResetData();
-            m_timer = 0;
+            //execute before restart this action
         }
 
         protected override ActionState OnExecute()
         {
-            if (m_timer >= m_delay.Value)
-            {
-                return ActionState.Success;
-            }
-            m_timer += Time.deltaTime;
-            return ActionState.Running;
+            "code here."
+            "ActionState has three values:Success,Failed,Running."
+            "if you execute a long-time action, such as Walk, you should return Running when not reach destination."
+            return ActionState.Success;
         }
     }
 }

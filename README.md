@@ -45,11 +45,22 @@ public class YOUR_ACTION : Action
 }
 ```
 
+## Variable
+
+Variable support a way to share value in nodes. ChivalryBT gives some built-in variables such as Bool, Int, Float, etc. To use variables, refer steps below.
+1. Create a empty GameObject to hold variable, put it anywhere you like(under **Variables** GameObject is recommended.).
+2. Attach **StringVariable** component on the GameObject and set variable's value.
+3. Pick **Log** node, check the toggle right of the argument **Log**.
+
+![Figure4](https://github.com/teddyzhang29/ChivalryBT/blob/master/Images/variable1.png)
+
+now, **Log** node's argument use the value of the StringVarialbe. If there's another node to change the value of that StringVariable, **Log** changes too.
+
 # Debug
 
 ChivalryBT will set state of every executed node as prefix of their names.  
-    ![Figure3](https://github.com/teddyzhang29/ChivalryBT/blob/master/Images/debug1.png)
+    ![Figure5](https://github.com/teddyzhang29/ChivalryBT/blob/master/Images/debug1.png)
 
-* S=success
-* F=Failed
-* R=running
+* S = Success
+* F = Failed
+* R = Running

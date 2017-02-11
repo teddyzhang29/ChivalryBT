@@ -90,13 +90,13 @@ namespace ChivalryBT
             switch (state)
             {
                 case ActionState.Success:
-                    prefix = "成功";
+                    prefix = "S";
                     break;
                 case ActionState.Failed:
-                    prefix = "失败";
+                    prefix = "F";
                     break;
                 case ActionState.Running:
-                    prefix = "运行";
+                    prefix = "R";
                     break;
                 default:
                     prefix = string.Empty;

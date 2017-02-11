@@ -61,7 +61,6 @@
     <Compile Include="Decorators\Succeeder.cs" />
     <Compile Include="Decorators\UntilFailure.cs" />
     <Compile Include="Decorators\UntilSuccess.cs" />
-    <Compile Include="Executor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Variables\BoolVariable.cs" />
     <Compile Include="Variables\FloatVariable.cs" />
